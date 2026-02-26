@@ -23,7 +23,7 @@ const GAME_DATA = {
       name: "Reading Rush",
       description: "Challenge yourself in an exciting reading adventure",
       grade: "Grades 6–8",
-      url: "https://github.com/Dishchiibikoh-Community-School/READING-RUSH",
+      url: "https://dishchiibikoh-community-school.github.io/READING-RUSH/",
       active: true
     },
     {
