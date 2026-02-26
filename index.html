@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EduEngine — Learn. Play. Advance.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+  <!-- TOP ACCENT BORDER -->
+  <div class="top-border" aria-hidden="true"></div>
+
+  <!-- ── HEADER ── -->
+  <header class="site-header">
+    <div class="wrapper">
+      <div class="header-inner">
+        <a href="index.html" class="logo" aria-label="EduEngine Home">
+          <div class="logo-icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11 2L20 7V15L11 20L2 15V7L11 2Z" stroke="#C9A96E" stroke-width="1.5" fill="none"/>
+              <circle cx="11" cy="11" r="3" fill="#C9A96E" opacity="0.8"/>
+              <path d="M11 2V5M11 17V20M2 7L5 8.5M17 13.5L20 15M2 15L5 13.5M17 8.5L20 7" stroke="#C9A96E" stroke-width="1" opacity="0.5"/>
+            </svg>
+          </div>
+          <div class="logo-wordmark">
+            <span class="logo-name">Edu<em>Engine</em></span>
+            <span class="logo-tagline">Learning Platform</span>
+          </div>
+        </a>
+        <div class="header-right">
+          <span class="header-pill">Grades 6–8</span>
+          <!-- TODO: Replace with <a href="login.html" class="btn-login">Teacher Login</a> when ready -->
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ── HERO ── -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrapper">
+      <div class="hero-grid">
+
+        <div class="hero-left animate-fadeup" style="--delay: 0.15s">
+          <div class="hero-eyebrow">
+            <span class="eyebrow-dot" aria-hidden="true"></span>
+            Your Learning Hub
+          </div>
+          <h1 class="hero-title" id="hero-title">
+            Learn Smarter.<br>
+            Play <em>Harder.</em><br>
+            <strong>Go Further.</strong>
+          </h1>
+          <p class="hero-body">
+            EduEngine brings school subjects to life with games designed for real learning — no boring drills, just skill-building adventures built for middle schoolers.
+          </p>
+          <div class="hero-stats" id="heroStats">
+            <!-- Populated by js/data.js -->
+          </div>
+        </div>
+
+        <div class="hero-right animate-fadeup" style="--delay: 0.35s" aria-hidden="true">
+          <div class="hero-card">
+            <div class="hero-card-label">All Subjects</div>
+            <div class="subject-pills" id="subjectPills">
+              <!-- Populated by js/render.js -->
+            </div>
+            <div class="hero-card-footer">
+              <span class="live-dot"></span>
+              <span class="hcf-text">No login needed — jump in and start playing</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── GAMES SECTION ── -->
+  <main class="games-section" id="games">
+    <div class="wrapper">
+
+      <div class="section-divider animate-fadeup" style="--delay: 0.1s">
+        <span class="sd-text">Choose a Subject</span>
+        <div class="sd-line" aria-hidden="true"></div>
+        <span class="sd-badge" id="totalBadge">Loading...</span>
+      </div>
+
+      <!-- Category panels are injected here by js/render.js -->
+      <div class="category-grid" id="categoryGrid" role="list" aria-label="Game categories">
+      </div>
+
+      <!-- COMING SOON BANNER -->
+      <div class="soon-banner animate-fadeup" style="--delay: 0.55s">
+        <div class="soon-left">
+          <div class="soon-subjects" aria-hidden="true">
+            <div class="soon-subj s">🔬</div>
+            <div class="soon-subj h">🏛️</div>
+            <div class="soon-subj ct">🧩</div>
+          </div>
+          <div class="soon-text">
+            <strong>More subjects coming soon</strong>
+            <p>Science, History &amp; Critical Thinking modules are in development</p>
+          </div>
+        </div>
+        <div class="soon-pill">In Development</div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ── FOOTER ── -->
+  <footer class="site-footer">
+    <div class="wrapper">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <div class="footer-logo-name">Edu<span>Engine</span></div>
+          <div class="footer-logo-sub">Learning That Powers You Forward</div>
+        </div>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <ul class="footer-links">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li>
+              <a href="#" class="link-soon">
+                Teacher Login
+                <span class="f-soon" aria-label="Coming soon">Soon</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="footer-copy">© 2025 EduEngine. All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/render.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>

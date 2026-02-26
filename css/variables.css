@@ -1,0 +1,68 @@
+/* ─────────────────────────────────────────
+   variables.css — Design tokens
+   All colours, spacing, radii, shadows
+   in one place for easy theming.
+───────────────────────────────────────── */
+
+:root {
+  /* ── Palette ── */
+  --bg:            #F7F4EF;
+  --bg-2:          #EFEAE1;
+  --white:         #FFFCF8;
+  --ink:           #1C1A17;
+  --ink-2:         #4A4640;
+  --ink-3:         #9A938A;
+  --ink-4:         #C5BFB6;
+
+  /* Gold (Reading & Writing) */
+  --gold:          #B8924A;
+  --gold-light:    #F5E6C8;
+  --gold-mid:      #E8D09A;
+  --gold-bg:       #FBF5E8;
+
+  /* Teal (Mathematics) */
+  --teal:          #2E7D7A;
+  --teal-light:    #C8E8E7;
+  --teal-bg:       #EBF5F5;
+
+  /* Rose (Science — coming soon) */
+  --rose:          #C0544A;
+  --rose-light:    #F5D5D2;
+  --rose-bg:       #FDF0EF;
+
+  /* Violet (History — coming soon) */
+  --violet:        #5B4FC4;
+  --violet-light:  #DDD8F8;
+  --violet-bg:     #F0EEFF;
+
+  /* ── Typography ── */
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body:    'Plus Jakarta Sans', system-ui, sans-serif;
+
+  /* ── Spacing ── */
+  --space-xs:  4px;
+  --space-sm:  8px;
+  --space-md:  16px;
+  --space-lg:  24px;
+  --space-xl:  32px;
+  --space-2xl: 48px;
+  --space-3xl: 72px;
+
+  /* ── Border radii ── */
+  --radius-sm:   8px;
+  --radius-md:   12px;
+  --radius-lg:   16px;
+  --radius-card: 20px;
+  --radius-xl:   24px;
+  --radius-pill: 100px;
+
+  /* ── Shadows ── */
+  --shadow-sm:  0 2px 12px rgba(28, 26, 23, 0.06);
+  --shadow-md:  0 8px 32px rgba(28, 26, 23, 0.10);
+  --shadow-lg:  0 20px 60px rgba(28, 26, 23, 0.12);
+
+  /* ── Transitions ── */
+  --ease-out:  cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in:   cubic-bezier(0.4, 0, 1, 1);
+  --duration:  0.25s;
+}

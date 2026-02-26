@@ -1,0 +1,78 @@
+/* ─────────────────────────────────────────
+   responsive.css — Breakpoints & mobile layout
+───────────────────────────────────────── */
+
+/* ── Tablet ── */
+@media (max-width: 960px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-right {
+    display: none; /* Show again on larger screens */
+  }
+
+  .hero-title {
+    font-size: 42px;
+  }
+}
+
+/* ── Mobile ── */
+@media (max-width: 820px) {
+  .wrapper {
+    padding: 0 20px;
+  }
+
+  .hero {
+    padding: 48px 0;
+  }
+
+  .category-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .footer-links {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .soon-banner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header-pill {
+    display: none;
+  }
+
+  .hero-stats {
+    gap: 20px;
+  }
+}
+
+/* ── Small mobile ── */
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 34px;
+  }
+
+  .cat-panel {
+    padding: 20px;
+  }
+
+  .game-tile {
+    padding: 12px;
+  }
+
+  .gt-thumb {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+}
