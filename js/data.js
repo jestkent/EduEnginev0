@@ -55,6 +55,15 @@ const GAME_DATA = {
       grade: "Grades 6–8",
       url: "https://mathmazemasters.lovable.app",
       active: true
+    },
+    {
+      id: "real-world-math",
+      emoji: "🌍",
+      name: "Real World Math",
+      description: "A game-based math app for middle schoolers where students earn XP, climb ranks, and solve real-life math challenges without it ever feeling like a test",
+      grade: "Grades 6–8",
+      url: "https://dishchiibikoh-community-school.github.io/ReWoMa/",
+      active: true
     }
   ]
 };
