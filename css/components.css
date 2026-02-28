@@ -412,7 +412,7 @@
   gap: 10px;
   flex: 1;
   min-height: 0;
-  max-height: 272px;
+  max-height: 186px;
   overflow-y: auto;
   padding-right: 4px;
 }
