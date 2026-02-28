@@ -319,8 +319,9 @@
 ══════════════════════════════════════════ */
 .category-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr));
   gap: var(--space-lg);
+  align-items: stretch;
 }
 
 .cat-panel {
@@ -330,6 +331,9 @@
   box-shadow: var(--shadow-sm);
   border: 1px solid rgba(28, 26, 23, 0.07);
   transition: box-shadow 0.35s var(--ease-out), transform 0.35s var(--ease-out);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .cat-panel:hover {
