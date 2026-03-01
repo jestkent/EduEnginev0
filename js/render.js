@@ -12,7 +12,7 @@
  */
 function renderGameTile(game) {
   return `
-    <a class="game-tile" href="${game.url}" aria-label="Play ${game.name}">
+    <a class="game-tile" href="${game.url}" target="_blank" rel="noopener noreferrer" aria-label="Play ${game.name} (opens in new tab)">
       <div class="gt-thumb" aria-hidden="true">${game.emoji}</div>
       <div class="gt-info">
         <div class="gt-name">${game.name}</div>
