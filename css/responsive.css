@@ -33,8 +33,25 @@
 
   .game-tiles {
     max-height: none;
-    overflow-y: visible;
+    overflow: visible;
     padding-right: 0;
+  }
+
+  .game-tile {
+    grid-template-columns: 46px minmax(0, 1fr);
+    row-gap: 10px;
+  }
+
+  .gt-info {
+    grid-column: 2;
+  }
+
+  .gt-right {
+    grid-column: 2;
+    flex-direction: row;
+    align-items: center;
+    justify-self: end;
+    min-width: 0;
   }
 
   .footer-inner {
@@ -73,6 +90,7 @@
   }
 
   .game-tile {
+    grid-template-columns: 40px minmax(0, 1fr);
     padding: 12px;
   }
 
